@@ -3,17 +3,16 @@
 #include <algorithm>
 #include <cstdio>
 using namespace std;
+static int pull(char p, char *fp)
+{
+    cout << *fp << endl;
+    return 0;
+}
 int main(int argc, char* argv[])
 {
     char p; //parameter
+    char *fp = &p;
     p = getchar();
-    if (p == 'a')
-    {
-        cout << "Hello." << endl;
-    }
-    else 
-    {
-        cout << "Bye." << endl;
-    }
+    pull(p, fp);
     return 0;
 }
